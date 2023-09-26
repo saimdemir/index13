@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - youtube.com/codingnepal -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">  
+    <title>QR Code Tarayıcı</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  </head>
+  <body>
+    <video autoplay loop muted>  <!--arka plan için video-->
+        <source src="Night Sky 4K Timelapse - East Horizon.mp4" type="video/mp4">
+        
+    </video>
+    <div class="wrapper">    <!--beyaz konteyner-->
+      <header>
+        <a href="https://www.instagram.com/saimjrr/?next=%2F"><i class="fa-brands fa-instagram"> SAIMJRR</i> </a>
+        <h1 class="" >QR Code Tarayıcı</h1>   <!--başlık-->
+        <p>kopyaladığın linki buraya yapıştır</p> <!--kopyalanan link-->
+      </header>
+      <div class="form">  <!--kullanıcından girdi almak-->
+        <input type="text" spellcheck="false" placeholder="linki girin...">
+        <button>QR Kod Oluştur</button>
+      </div>
+      <div class="qr-code">   <!-- eklenicek qr kod alanı-->
+        <img id="myimage" alt="qr-code"> <br>
+        
+      </div>
+        <p id="gizliMetin" style="display: none;">Bu Sayfa @saimjrr <br>
+        tarafından oluşturuldu </p>
+        <div class="db">
+            <button  id="downloadButton" style="display: none;" class="btn">Resmi İndir</button>
+        </div>
+    </div>
+   
+
+    <script src="script.js"></script>
+    <!--bitiş...-->
+
+  </body>
+</html>
